@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'project-angular';
+  christian = 'bayle'
+
+  name: string = '';
+  listofnames: string[]=['Chan', 'Vee', 'Jovs']
+  addName(){
+    console.log("add button is working!");
+    this.listofnames.push(this.name)
+    console.log(this.listofnames);
+  }
+  delete(){
+    this.listofnames.splice(0, 1)
+  }
 }
